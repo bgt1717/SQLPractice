@@ -40,10 +40,10 @@ FROM
 WHERE 
     Boxes_Shipped = (SELECT MIN(Boxes_Shipped) FROM dbo.ChocoExcel);
 
---Count
+--Count (Counts all the rows in the entire table)
 SELECT COUNT(*)
-FROM Products;
+FROM dbo.ChocoExcel;
 
---test123
+
 
 
