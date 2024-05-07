@@ -44,6 +44,12 @@ WHERE
 SELECT COUNT(*)
 FROM dbo.ChocoExcel;
 
+--COUNT with WHERE (A condition is specified)
+-- As is an alias. 
+SELECT COUNT(Boxes_Shipped) As [Number of boxes shipped above 300] 
+FROM dbo.ChocoExcel
+WHERE boxes_shipped > 300;
+
 
 
 
